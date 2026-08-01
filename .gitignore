@@ -128,6 +128,13 @@ celerybeat.pid
 
 # Environments
 .env
+.env.*
+!.env.example
+node_modules/
+.vercel/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
 .venv
 env/
 venv/

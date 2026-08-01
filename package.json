@@ -17,7 +17,6 @@
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@vercel/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "typescript": "latest"

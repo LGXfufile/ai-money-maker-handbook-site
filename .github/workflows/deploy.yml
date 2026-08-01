@@ -1,4 +1,4 @@
-name: Deploy to Vercel
+name: CI / Vercel Deployment
 on:
   push:
     branches: [main]
@@ -14,6 +14,4 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - name: Deploy production
-        if: ${{ secrets.VERCEL_TOKEN != '' }}
-        run: npx vercel deploy --prod --yes --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }}
+      # Production deployment is triggered automatically by the Vercel Git integration.
